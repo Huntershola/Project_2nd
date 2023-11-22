@@ -40,12 +40,12 @@ app.post("/", function(req, res){
 
     const jsonData = JSON.stringify(data);
 
-    const url = 'https://us21.api.mailchimp.com/3.0/lists/4885f9bf4b' ;
+    const url = "https://us21.api.mailchimp.com/3.0/lists/4885f9bf4b";
 
     const options = {
 
     method: "POST",
-    auth:"Shola1:d9c7adeb8c4566b5dc734d0816a847cf-us21"
+    auth:"Shola1:39a51d0ba675a753c9da54f7d503bf85-us21"
     }
 
     const request = https.request(url, options, function(response){
@@ -65,8 +65,8 @@ app.post("/", function(req, res){
       
 
     })
-// request.write(jsonData);
-request.end();
+//  request.write(jsonData);
+ request.end();
 });
 
 app.post("/failure", function(req, res) {
